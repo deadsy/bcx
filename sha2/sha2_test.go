@@ -9,7 +9,7 @@ import (
 
 func TestSha2_256(t *testing.T) {
 
-	for i := 0; i < 1000; i++ {
+	for i := 0; i < 10000; i++ {
 
 		n := rand.Int() & ((1 << 16) - 1)
 		data := make([]byte, n)
